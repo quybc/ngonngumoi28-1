@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript</title>
+</head>
+<body>
+    <h1>Test JavaScript trong trình duyệt</h1>
+    <p>Mở Developer Tools (F12) để xem console output.</p>
+
+    <style>
+        #product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+            background: #fff;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-size: 1.1em;
+            margin: 10px 0;
+            height: 2.4em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .product-price {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 10px 0;
+        }
+        .product-desc {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            height: 3em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .btn-buy {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        .btn-buy:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <div id="product-list"></div>
+    <script src="bai_tap_product.js"></script>
+</body>
+</html>
